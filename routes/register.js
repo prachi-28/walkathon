@@ -1,5 +1,5 @@
-const CandidateSchema = require("../models/Candidate")
-
+const CandidateSchema = require("../models/Candidate");
+const mailer = require("./mailer");
 let exp = {};
 
 exp.add = async(req,res) => {
@@ -24,8 +24,8 @@ exp.add = async(req,res) => {
         return res.send("Error in inserting.");
     }
         console.log(result);
-        //MAILER
-        
+        mailer.sendMail((req.body.email).trim());
+        console.log('Foo')
         return res.send("User Added!")
     }
     catch (err) {
