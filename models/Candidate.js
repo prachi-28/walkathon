@@ -36,7 +36,7 @@ const CandidateSchema = mongoose.Schema({
         type: String
     },
     type: {
-        type: Number,
+        type: String,
         required: true
     }
 });

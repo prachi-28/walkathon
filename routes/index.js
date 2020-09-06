@@ -6,4 +6,8 @@ router.post("/register", reg.add);
 router.get("/",(req, res) => {
     res.render("index.html");
 })
+
+// router.get("", (req, res) => {
+//     res.redirect("/")
+// })
 module.exports = router;    

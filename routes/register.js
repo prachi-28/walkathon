@@ -13,7 +13,7 @@ exp.add = async(req,res) => {
             address: req.body.address,
             state: req.body.state,
             country: req.body.country,
-            occup: req.body.occupation,
+            occupation: req.body.occupation,
             category: req.body.category,
             type: req.body.type,
         
@@ -21,12 +21,18 @@ exp.add = async(req,res) => {
     let result = await candi.save();
     if (!result) {
         console.log(e);
-        return res.send("Error in inserting.");
+        return res.status(200).send({
+          msg: "An error occurred, please try again!",
+          done: false,
+        });
     }
         console.log(result);
         mailer.sendMail((req.body.email).trim());
         console.log('Foo')
-        return res.send("User Added!")
+        return res.status(200).send({
+            msg: "Successfully Registered!",
+            done: true
+        })
     }
     catch (err) {
         console.log(err);

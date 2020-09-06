@@ -5,31 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Walkathon TechTatva'20</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 <body>
         <!-- Picture -->
-        <div class="container">
-        <div class="main-head">Walkathon TechTatva'20</div>
-
+        <div class="container" id="landing"> 
+            <div class="upper">
+        <div class="main-head"><span class="walk">WALK</span>ATHON</div>
+        
+        <div class="second-head">2020</div>
         </div>
-
+            <div class="lower">
+                <img src="img/Group 16.svg" alt="Main" id="landing-img">
+            </div>
+        </div>
 
         <!-- content -->
+        <div class="container" id="dets">
+            <div class="rose-img">
+                <img src="img/Group 23.svg" alt="Rose" id="rose-img">
+            </div>
+            <div class="rose-text">
+                This <span class="emp">Rose Day,</span>
+                walk with a purpose,<br>
+                walk in the memory of those who<br>
+                were lost to <span class="emp">Cancer</span>.
+            </div>
+        </div>
+        
+        <!-- carousal -->
+        
         <div class="container">
-        <div class="second-head">Overview</div>
+            
+            
+<div class="carousel"
+   data-flickity='{ "lazyLoad": true}'>
+  <div class="carousel-cell">
+    <img class="carousel-cell-image"
+      data-flickity-lazyload="img/Group 28.svg" alt="Chadwick" />
+  </div>
 
-        <div class="stuff">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, blanditiis deleniti. Vero debitis ex sit consectetur vitae voluptatem eius sequi nemo ad ut, non reprehenderit fugit sapiente deleniti mollitia labore!
-        </div>
+<div class="carousel-cell">
+    <img class="carousel-cell-image" data-flickity-lazyload="img/Group 29.svg" alt="Rishi" />
+</div>
 
-        <div class="second-head">Details</div>
-        <div class="dets">
-            <ul>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia rerum vitae labore! Esse illo, iure quidem praesentium voluptatibus, perspiciatis corrupti similique reprehenderit dolorem unde dignissimos, omnis architecto consequuntur labore nihil.</li>
-                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi asperiores numquam autem odit dolor consectetur reprehenderit qui maxime tenetur in illo, dolorum maiores voluptas harum, assumenda nostrum dolore nulla a.</li>
-            </ul>
+<div class="carousel-cell">
+    <img class="carousel-cell-image" data-flickity-lazyload="img/Group 30.svg" alt="Irfan" />
+</div>
+  
+</div>
+
+
+
         </div>
-        </div>
+        
+        <!-- category -->
+
 
 
         <!-- form -->
@@ -49,7 +80,7 @@
                 <option value="Student">Student</option>
                 <option value="Professional">Professional</option>
             </select>
-            <input type="text" id="category" placeholder="Category*">
+            <input type="text" id="category" placeholder="TechTatva Category">
             <select name="type" id="type">
                 <option value="none" disabled selected >Select Event length*</option>
                 <option value="3">3 KM</option>
@@ -57,9 +88,10 @@
                 <option value="10">10 KM</option>
                 <option value="21">21 KM</option>
             </select>
-            <button class="submit">Register</button>
+            <button class="submit" id="submit">Submit</button>
         </div>
         </div>
 </body>
-<script src="main.js"></script>
+<script src="js/main.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </html>

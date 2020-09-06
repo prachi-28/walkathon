@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
 html {
     height: 100%;
@@ -10,8 +10,16 @@ body {
     width: 100%;
     margin: 0px;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
+    overflow-x: hidden;
+}
+
+#form, #carousal{
+    background-image: url("../img/Mask\ Group.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 }
 
 .container{
@@ -19,11 +27,74 @@ body {
     height: 100vh;
 }
 
+#landing{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.upper{
+    height: 20vh;
+}
+
+.walk{
+    color: #F78B8C;
+}
+.main-head{
+    padding-top: 10%;
+    padding-left: 3%;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.second-head{
+    padding-left: 5%;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #9f9f9f;
+}
+
+/* .lower{
+    height: 80vh;
+} */
+
+#landing-img{
+    position: relative;
+    width: 310%;
+    left: -20%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+#dets{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.rose-img{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+#rose-img{
+    width: 70%;
+    height: 70%;
+}
+.rose-text{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.emp{
+    color: #F78B8C;
+}
+
 .second-head-reg{
     padding-top: 4%;
+    padding-bottom: 4%;
     text-align: center;
     font-weight: 800;
-    font-size: 1.35rem;
+    font-size: 1.75rem;
 }
 
 #form{
@@ -35,50 +106,134 @@ body {
     height: 90vh;
     display: flex;
     flex-direction: column;
-    justify-content:  space-evenly;
+    justify-content:  space-around;
     align-items: center;
 }
 
-
+input:focus, select:focus{
+    outline: none;
+    border-bottom: 3px solid #F78B8C;
+}
 input,select{
     width: 60%;
     height: 4.5%;
-    border: 1px solid black;
+    border: 0;
+    background-color: transparent;
+    -webkit-appearance: none;
+    border-bottom: 1px solid black;
+    font-size: medium;
+    font-weight: 600;
 }
 
 input::placeholder,option,select{
     font-weight: 600;
-    font-size: .75rem;
+    font-size: small;
 }
+
 
 button{
     font-weight: 600;
-    font-size: .85rem;
-    padding: 7px 13px 7px 13px;
+    font-size: 1rem;
+    border: 3px solid #F78B8C;
+    /* box-shadow: 2px 2px 2px 2px #F78B8C; */
+    padding: 8px 25px 8px 25px;
+    color: #F78B8C;
+    background-color: white;
+}
+
+/* Carousel CSS */
+
+.carousel {
+  background: #FAFAFA;
+}
+
+.carousel-cell {
+  width: 66%;
+  height: 600px;
+  margin-right: 10px;
+  background: white;
+}
+
+.carousel-cell-image {
+  height: 100%;
+  max-width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+          transition: opacity 0.4s;
+}
+
+.carousel-cell-image.flickity-lazyloaded,
+.carousel-cell-image.flickity-lazyerror {
+  opacity: 1;
 }
 
 
 @media only screen and (min-width: 700px) {
+
+.main-head{
+    padding-top: 4%;
+}
+
+.second-head{
+    padding-left: 3.2%;
+}
+
+#landing-img{
+    left: -50%;
+}
+
 input::placeholder,option,select{
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: medium;
 }
 input,select{
     width: 54%;
     height: 4.5%;
-    border: 1px solid black;
+}
+#dets{
+    flex-direction: row-reverse;
+}
+.rose-img{
+    width: 50vw;
+    height: 100vh;
+}
+
+#rose-img{
+    padding-top: 30%;
+}
+.rose-text{
+width: 50vw;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
 }
 
 
 @media only screen and (min-width: 1200px) {
+
+    #rose-img{
+    height: 60%;
+}
+
+#landing-img{
+    width: 100%;
+    left: 0%;
+}
     input::placeholder,option,select{
     font-weight: 600;
-    font-size: 1.55rem;
+    font-size: medium;
 }
 input,select{
-    width: 45%;
+    width: 35%;
     height: 4.5%;
-    border: 1px solid black;
+}
+.carousel-cell-image {
+  height: 100%;
+  width: 120%;
 }
 }
+
+
+
