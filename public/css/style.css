@@ -79,17 +79,206 @@ body {
     width: 70%;
     height: 70%;
 }
+
+#containerRoseR
+{
+    display: none;
+}
 .rose-text{
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: 400;
+   
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    
+    line-height: 39px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 16rem;
+    font-size: 1.7rem;
+    text-align: left;
+    margin-top: 1.6vh;
+  
+    color: #9F9F9F;
+    
 }
 
 .emp{
     color: #F78B8C;
 }
 
-.second-head-reg{
+/* Form CSS */
+
+.reg {
+    position: relative;
+    z-index: 10;
+    text-align: left;
+    padding-left: 17vw!important;
+    padding-right: 17vw!important;
+  }
+
+  .pref {
+    font-size: 3rem;
+    /*background: -webkit-linear-gradient(90.49deg, #fc01ef 0.08%, #fe01ad 99.91%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+    color: #878787;
+    padding: 2rem;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+   
+  }
+
+  .underline-animation {
+    animation: pulse 20s infinite;
+    transition: all 0.8s;
+    display: inline-block;
+    bottom: 0;
+    left: -100%;
+    position: absolute;
+    width: 98%;
+    height: 3px;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    margin-bottom: 0vh;
+    height: 3px;
+    background-color: #F78B8C;
+   
+  }
+  
+  .input-name > input[type="text"]:focus + .underline-animation {
+    left: 0px;
+  }
+
+  input[type="text"]:focus {
+    box-shadow: none;
+    background: transparent;
+  }
+
+
+  input:focus ~ .floating-label {
+    display: inline;
+    top: 6px;
+    bottom: 10px;
+    left: 16px;
+    font-size: 11px;
+    opacity: 1;
+  }
+  
+  /* if you want to show label after value has been added */
+  input:not(:placeholder-shown) ~ .floating-label {
+    display: inline;
+    top: 6px;
+    bottom: 10px;
+    left: 16px;
+    font-size: 11px;
+    opacity: 1;
+    color: #F78B8C;
+  }
+  
+  .inputText {
+    font-size: 14px;
+    width: 200px;
+    height: 35px;
+    
+  }
+  input:focus::placeholder {
+    color: transparent;
+    
+  }
+  
+  .floating-label {
+    display: none;
+    position: absolute;
+    pointer-events: none;
+    left: 30px;
+    top: 20px;
+    transition: 0.2s ease all;
+    color: #F78B8C;
+    font-family: Open Sans;
+    font-style: normal;
+    
+  }
+
+
+
+  
+.input-name {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin-bottom: 3vh !important;
+    padding-top: 1rem;
+    outline: none!important;
+    border-top: none!important;
+   
+  }
+  .input-name > input[type="text"] {
+    border: none;
+    box-shadow: none;
+    background: transparent;
+   
+    border-bottom: 2px solid #9F9F9F;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    outline: none;
+  }
+
+
+  select {
+    background: transparent!important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    margin-top: 2vh !important;
+    border-bottom: 2px solid #9b9b9b !important;
+    padding-left: 1.5vw !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+
+  #walkDistance {
+    margin-top: 2.7vh !important;
+  }
+
+  
+.wrapper {
+    text-align: center;
+  }
+
+  .btn-outline-secondary {
+    margin-top: 8vh;
+    width: 142px !important;
+    
+    font-size: 1.2rem;
+    border-width: 0rem !important;
+}
+
+.btn-outline-secondary:hover {
+    color:white!important;
+    background-color:  #F78B8C !important;
+   
+}
+
+  .btn {
+    border: 2px solid #F78B8C!important;
+    background-color: white;
+    color:  #F78B8C!important;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+
+
+
+  
+  
+
+/*.second-head-reg{
     padding-top: 4%;
     padding-bottom: 4%;
     text-align: center;
@@ -135,16 +324,16 @@ button{
     font-weight: 600;
     font-size: 1rem;
     border: 3px solid #F78B8C;
-    /* box-shadow: 2px 2px 2px 2px #F78B8C; */
+    
     padding: 8px 25px 8px 25px;
     color: #F78B8C;
     background-color: white;
-}
+}*/
 
 /* Carousel CSS */
 
 .carousel {
-  background: #FAFAFA;
+ /* background: #FAFAFA;*/
 }
 
 .carousel-cell {
@@ -234,6 +423,19 @@ input,select{
   width: 120%;
 }
 }
+
+
+@media screen and (min-width: 0px) and (max-width: 750px) and (orientation: portrait) {
+
+    #containerRoseR {
+        display: block;
+        margin-top: 30vh;
+        height: 20rem;
+    }
+
+    
+}
+
 
 
 
