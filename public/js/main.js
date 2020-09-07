@@ -46,10 +46,13 @@ window.addEventListener('load', () => {
             .then((json)=> {
                 if (json.done) {
                     alert(json.msg)
-                    window.location.reload();
+                    setTimeout(() => { 
+                        window.location.replace("/");
+                     }, 1500);
                 }
                 else {
                     alert(json.msg);
+                    console.log('bt');
                 }
           })
           

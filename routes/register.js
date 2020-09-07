@@ -1,5 +1,6 @@
 const CandidateSchema = require("../models/Candidate");
 const mailer = require("./mailer");
+const { Redshift } = require("aws-sdk");
 let exp = {};
 
 exp.add = async(req,res) => {
@@ -27,8 +28,12 @@ exp.add = async(req,res) => {
         });
     }
         console.log(result);
-        mailer.sendMail((req.body.email).trim());
-        console.log('Foo')
+        let obj = {
+            "name": req.body.name,
+            "email": (req.body.email).trim(),
+            "cat": req.body.type
+        }
+        mailer.sendMail(obj);
         return res.status(200).send({
             msg: "Successfully Registered!",
             done: true

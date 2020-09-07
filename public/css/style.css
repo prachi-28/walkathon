@@ -141,6 +141,12 @@ button{
     background-color: white;
 }
 
+button:hover{
+    color: white;
+    background-color: #F78B8C;
+    cursor: pointer;
+}
+
 /* Carousel CSS */
 
 .carousel {
