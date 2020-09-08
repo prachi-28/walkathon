@@ -15,7 +15,7 @@ body {
     overflow-x: hidden;
 }
 
-#form, #carousal{
+#form, #carousal, #footer{
     background-image: url("../img/Mask\ Group.svg");
     background-repeat: no-repeat;
     background-position: bottom left;
@@ -399,6 +399,34 @@ input,select{
   }
 }
 
+/*footer*/
+
+.foo1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  margin-top: 65vh;
+  padding-top: 18vh;
+  color: #9F9F9F;
+}
+
+.foo2 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 87px;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5vh;
+
+  color: #F78B8C;
+}
+
 
 
 @media only screen and (min-width: 1200px) {
@@ -437,5 +465,25 @@ input,select{
 
     .roseR {
       padding-left: 10vw!important;
+    }
+
+    .regHead {
+      padding-left:0!important;
+    }
+
+    .submitbtn {
+      margin-top: 16vh;
+    }
+
+    .foo1 {
+      padding-top: 30vh;
+      font-size: 1.7rem;
+      margin-top:10vh!important;
+     }
+    
+    .foo2 {
+       margin-top: 5vh;
+       font-size: 2rem;
+       line-height: 50px;
     }
 }
