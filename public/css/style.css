@@ -115,8 +115,8 @@ body {
     position: relative;
     z-index: 10;
     text-align: left;
-    padding-left: 17vw!important;
-    padding-right: 17vw!important;
+    padding-left: 19vw!important;
+    padding-right: 19vw!important;
   }
 
   .pref {
@@ -400,7 +400,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 }
-}
+
 
 
 @media only screen and (min-width: 1200px) {
@@ -435,6 +435,17 @@ input,select{
         margin-top: 30vh;
         height: 20rem;
     }
+
+    .rose-text {
+     font-size: 1.5rem;
+     line-height:5.7vh;
+    }
+
+    .rose-img {
+      position: relative!important;
+      left: 10vw!important;
+    }
+
 
     
 }
