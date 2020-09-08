@@ -18,8 +18,8 @@ body {
 #form, #carousal{
     background-image: url("../img/Mask\ Group.svg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
+    background-position: bottom left;
+    background-size: 45%;
 }
 
 .container{
@@ -80,10 +80,6 @@ body {
     height: 70%;
 }
 
-#containerRoseR
-{
-    display: none;
-}
 .rose-text{
    
     font-family: 'Open Sans';
@@ -344,6 +340,7 @@ button:hover{
   height: 600px;
   margin-right: 10px;
   background: white;
+ 
 }
 
 .carousel-cell-image {
@@ -390,15 +387,16 @@ input,select{
     height: 100vh;
 }
 
-#rose-img{
-    padding-top: 30%;
-}
-.rose-text{
-width: 50vw;
-height: 100vh;
-display: flex;
-flex-direction: column;
-justify-content: center;
+  #rose-img{
+      padding-top: 30%;
+  }
+  .rose-text{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
 }
 
 
@@ -428,28 +426,16 @@ input,select{
 }
 
 
-@media screen and (min-width: 0px) and (max-width: 750px) and (orientation: portrait) {
+@media screen and (min-width: 0px) and (max-width: 750px) and (orientation: portrait) 
+{
 
-    #containerRoseR {
-        display: block;
-        margin-top: 30vh;
-        height: 20rem;
-    }
 
     .rose-text {
      font-size: 1.5rem;
      line-height:5.7vh;
     }
 
-    .rose-img {
-      position: relative!important;
-      left: 10vw!important;
+    .roseR {
+      padding-left: 10vw!important;
     }
-
-
-    
 }
-
-
-
-
