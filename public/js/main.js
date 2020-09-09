@@ -1,8 +1,20 @@
 'use strict'
 
 window.addEventListener('load', () => {
+    var type1 = document.getElementById("walkDistance");
+    document.getElementById("5km").addEventListener('click', () => {
+        type1.selectedIndex = "1";
+    });
 
-    // submitContent-Type: application/json
+    document.getElementById("10km").addEventListener('click', () => {
+        type1.selectedIndex = "2";
+    });
+
+    document.getElementById("21km").addEventListener('click', () => {
+        type1.selectedIndex = "3";
+    });
+
+
     var sb = document.getElementById('submit');
     sb.addEventListener('click', (e) => { 
         e.preventDefault();
@@ -12,11 +24,8 @@ window.addEventListener('load', () => {
         var address = document.getElementById("address").value;
         var state = document.getElementById("state").value;
         var country = document.getElementById("country").value;
-        var occupation = document.getElementById("occupation");
-        var str_o = occupation.options[occupation.selectedIndex].text;
-        var cat = document.getElementById("category").value;
-        var type = document.getElementById("type");
-        var str_t = type.options[type.selectedIndex].text;
+        var type = document.getElementById("walkDistance");
+        var walkDistance = type.options[type.selectedIndex].text;
 
         let data = {
             "name": name,
@@ -25,9 +34,7 @@ window.addEventListener('load', () => {
             "address": address,
             "state": state,
             "country": country,
-            "occupation": str_o,
-            "category": cat,
-            "type": str_t
+            "type": walkDistance
         }
         console.log(data)
         fetch("/register", {
@@ -52,7 +59,6 @@ window.addEventListener('load', () => {
                 }
                 else {
                     alert(json.msg);
-                    console.log('bt');
                 }
           })
           

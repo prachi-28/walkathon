@@ -14,8 +14,6 @@ exp.add = async(req,res) => {
             address: req.body.address,
             state: req.body.state,
             country: req.body.country,
-            occupation: req.body.occupation,
-            category: req.body.category,
             type: req.body.type,
         
     });

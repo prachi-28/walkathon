@@ -15,7 +15,7 @@ body {
     overflow-x: hidden;
 }
 
-#form, #carousal, #footer{
+#form, #carousal, #footer, #dis-btn{
     background-image: url("../img/Mask\ Group.svg");
     background-repeat: no-repeat;
     background-position: bottom left;
@@ -115,13 +115,40 @@ body {
     padding-right: 19vw!important;
   }
 
+  #dis-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+  }
+
+  #cat{
+    margin-bottom: 22.5%;
+  }
+
+  .dis{
+    margin-top: 12.5%;
+    margin-bottom: 20%;;
+    color: #9F9F9F;
+    font-weight: 800;
+    padding: 20px 40px;
+    background-color: white;
+    letter-spacing: 2px;
+  }
+
+  .dis-btn2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .pref {
-    font-size: 3rem;
+    font-size: 2rem;
     /*background: -webkit-linear-gradient(90.49deg, #fc01ef 0.08%, #fe01ad 99.91%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;*/
     color: #878787;
-    padding: 2rem;
+    padding-top: 2.5rem;
     align-self: center;
     align-content: center;
     text-align: center;
@@ -356,7 +383,27 @@ button:hover{
   opacity: 1;
 }
 
+#footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.foo1{
+  font-style: normal;
+font-weight: bold;
+font-size: 1.5rem;
+color: #9f9f9f
+}
+
+.foo2{
+font-style: normal;
+font-weight: bold;
+font-size:3.5rem;
+color: #F78B8C;
+text-align: center;
+}
 @media only screen and (min-width: 700px) {
 
 .main-head{
@@ -397,35 +444,25 @@ input,select{
   flex-direction: column;
   justify-content: center;
   }
+  .dis-btn2{
+    flex-direction: row;
+  }
+  .dis{
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 2rem;
+    white-space: nowrap;
+  }
+  .pref{
+    font-size: 3.5rem;
+  }
 }
 
 /*footer*/
 
-.foo1 {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 49px;
-  text-align: center;
-  margin-top: 65vh;
-  padding-top: 18vh;
-  color: #9F9F9F;
-}
 
-.foo2 {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 54px;
-  line-height: 87px;
-  align-self: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 5vh;
-
-  color: #F78B8C;
-}
 
 
 

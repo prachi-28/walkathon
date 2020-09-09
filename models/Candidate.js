@@ -28,13 +28,6 @@ const CandidateSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    occupation: {
-        type: String,
-        required: true
-    },
-    category: {
-        type: String
-    },
     type: {
         type: String,
         required: true
