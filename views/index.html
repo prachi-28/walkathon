@@ -2,7 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description"
+        content="Walkathon'2020 by TechTatva, MIT Manipal." />
+        <meta name="keywords" content="TechTatva Manipal MIT Walkathon Cancer Chadwick" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/svg" href="img/Group 23.svg" />
+
     <title>Walkathon TechTatva'20</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -36,8 +41,6 @@
                 were lost to <span class="emp">Cancer</span>.</p> 
             </div>
         </div>
-
-        
 
      
         <!-- carousal -->
@@ -125,7 +128,11 @@
             </select>
 
             <div class="wrapper">
-                <button type="button" id="submit" class="btn btn-outline-secondary submitbtn">
+                <button type="button" id="submit" class="btn btn-outline-secondary submitbtn"
+                class="g-recaptcha" 
+                data-sitekey="6Le7FsoZAAAAAANrwEUEOcBbztOLRXABmeoPWUiF" 
+                data-callback='onSubmit' 
+                data-action='submit'>
                   Submit
                 </button>
               </div>
@@ -141,4 +148,5 @@
 </body>
 <script src="js/main.js"></script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+ <script src="https://www.google.com/recaptcha/api.js"></script>
 </html>

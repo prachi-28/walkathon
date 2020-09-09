@@ -14,7 +14,6 @@ window.addEventListener('load', () => {
         type1.selectedIndex = "3";
     });
 
-
     var sb = document.getElementById('submit');
     sb.addEventListener('click', (e) => { 
         e.preventDefault();
@@ -62,5 +61,5 @@ window.addEventListener('load', () => {
                 }
           })
           
-    })  
+    }) 
 })
