@@ -12,6 +12,11 @@ exp.add =
   ],
   async (req, res) => {
     try {
+      const errors = validationResult(req);
+      if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() }); //check body
+      }
+
       console.log(req.body);
       const candi = new CandidateSchema({
         name: req.body.name.trim(),
