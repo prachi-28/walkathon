@@ -23,9 +23,16 @@ body {
 }
 
 .container{
-    width: 100%;
+    width: 100%!important;
     height: 100vh;
+    padding-left: 0px!important;
+    
 }
+
+.c1 {
+  margin-left: 0px!important;
+}
+
 
 #landing{
     display: flex;
@@ -111,7 +118,8 @@ body {
     position: relative;
     z-index: 10;
     text-align: left;
-    padding-left: 19vw!important;
+    padding-top: 8vh;
+    padding-left: 26vw!important;
     padding-right: 19vw!important;
   }
 
@@ -120,10 +128,12 @@ body {
     flex-direction: column;
     align-items: center;
     background-repeat: no-repeat;
+    
   }
 
   #cat{
     margin-bottom: 22.5%;
+    margin-left: 10vw!important;
   }
 
   .dis{
@@ -140,6 +150,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 15vw!important;
   }
 
   .pref {
@@ -394,7 +405,8 @@ button:hover{
   font-style: normal;
 font-weight: bold;
 font-size: 1.5rem;
-color: #9f9f9f
+color: #9f9f9f;
+padding-left: 5vw;
 }
 
 .foo2{
@@ -403,6 +415,7 @@ font-weight: bold;
 font-size:3.5rem;
 color: #F78B8C;
 text-align: center;
+padding-left: 8vw;
 }
 @media only screen and (min-width: 700px) {
 
@@ -446,6 +459,7 @@ input,select{
   }
   .dis-btn2{
     flex-direction: row;
+    
   }
   .dis{
     margin-right: 5%;
@@ -454,6 +468,7 @@ input,select{
     padding-right: 60px;
     font-size: 2rem;
     white-space: nowrap;
+   
   }
   .pref{
     font-size: 3.5rem;
@@ -498,6 +513,7 @@ input,select{
     .rose-text {
      font-size: 1.5rem;
      line-height:5.7vh;
+     padding-left: 4vw!important;
     }
 
     .roseR {
@@ -507,6 +523,8 @@ input,select{
     .regHead {
       padding-left:0!important;
     }
+
+    
 
     .submitbtn {
       margin-top: 16vh;
