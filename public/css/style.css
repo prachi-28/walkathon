@@ -20,6 +20,7 @@ body {
 
 #form, #carousal, #footer, #dis-btn{
     background-image: url("../img/Mask\ Group.svg");
+   
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: 45%;
@@ -34,6 +35,7 @@ body {
 
 .c1 {
   margin-left: 0px!important;
+  
 }
 
 
@@ -122,8 +124,20 @@ body {
     z-index: 10;
     text-align: left;
     padding-top: 8vh;
-    padding-left: 21vw !important;
+    padding-left: 28vw !important;
     padding-right: 19vw!important;
+    
+    
+  }
+
+  #gulaabKaIssue {
+
+    align-self: center!important;
+    justify-content: center!important;
+    justify-items: center!important;
+    display: inline-block!important;
+    
+
   }
 
   #dis-btn{
@@ -139,9 +153,10 @@ body {
     margin-left: 10vw!important;
   }
 
+
   .dis{
-    margin-top: 12.5%;
-    margin-bottom: 20%;;
+    margin-top: 5%;
+    margin-bottom: 12%;;
     color: #9F9F9F;
     font-weight: 800;
     padding: 20px 40px;
