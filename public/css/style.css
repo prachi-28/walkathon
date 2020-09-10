@@ -5,13 +5,15 @@ html {
     width: 100%;
      scroll-behavior: smooth;
 }
-
+*, ::after, ::before {
+     box-sizing: none !important; 
+}
 body {
     height: 100%;
     width: 100%;
     margin: 0px;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif !important;
     font-size: 1rem;
     overflow-x: hidden;
 }
@@ -120,7 +122,7 @@ body {
     z-index: 10;
     text-align: left;
     padding-top: 8vh;
-    padding-left: 24vw!important;
+    padding-left: 21vw !important;
     padding-right: 19vw!important;
   }
 
@@ -460,7 +462,7 @@ input,select{
   }
   .dis-btn2{
     flex-direction: row;
-    
+    flex-wrap: wrap;
   }
   .dis{
     margin-right: 5%;
@@ -491,6 +493,10 @@ input,select{
 #landing-img{
     width: 100%;
     left: 0%;
+}
+
+#cat{
+  margin-bottom: 0%;
 }
     input::placeholder,option,select{
     font-weight: 600;

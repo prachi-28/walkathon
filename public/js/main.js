@@ -4,18 +4,30 @@
 
 window.addEventListener('load', () => {
     var type1 = document.getElementById("walkDistance");
-    document.getElementById("5km").addEventListener('click', () => {
+
+    document.getElementById("1km").addEventListener('click', () => {
         type1.selectedIndex = "1";
         type1.focus();
     });
 
-    document.getElementById("10km").addEventListener('click', () => {
+    document.getElementById("3km").addEventListener('click', () => {
         type1.selectedIndex = "2";
         type1.focus();
     });
 
-    document.getElementById("21km").addEventListener('click', () => {
+
+    document.getElementById("5km").addEventListener('click', () => {
         type1.selectedIndex = "3";
+        type1.focus();
+    });
+
+    document.getElementById("10km").addEventListener('click', () => {
+        type1.selectedIndex = "4";
+        type1.focus();
+    });
+
+    document.getElementById("21km").addEventListener('click', () => {
+        type1.selectedIndex = "5";
         type1.focus();
     });
 

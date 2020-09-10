@@ -43,7 +43,7 @@ exp.add =
       };
       mailer.sendMail(obj);
       return res.status(200).send({
-        msg: "Successfully Registered!",
+        msg: "Successfully Registered! Check your Email for details.",
         done: true,
       });
     } catch (err) {
