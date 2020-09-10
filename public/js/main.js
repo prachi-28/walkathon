@@ -66,7 +66,7 @@ window.addEventListener('load', () => {
                 return false;
             }
 
-            if (walkDistance == "") {
+            if (walkDistance == "Distance") {
                 alert("Select walking distance");
                 return false;
             }
@@ -75,7 +75,6 @@ window.addEventListener('load', () => {
 
         }
         if (!validate()) {
-            alert("Something went wrong, try again.")
         }
         else {
             let data = {
